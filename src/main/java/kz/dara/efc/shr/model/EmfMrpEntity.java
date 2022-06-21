@@ -24,9 +24,9 @@ import lombok.ToString;
 @ToString
 @RequiredArgsConstructor
 public class EmfMrpEntity {
+	
 	@Id
 	private Long id;
-	
 	
 	@Column(name = "curator_comments")
 	private String curatorComments;
@@ -40,6 +40,7 @@ public class EmfMrpEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "tsmamp")
 	private Date tsmamp;
+	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "begin_date")
 	protected Date beginDate;
